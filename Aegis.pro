@@ -94,7 +94,8 @@ HEADERS += \
     src/headers/miscutil.h \
     src/headers/actionhelpers.h \
     src/headers/menubuilder.h \
-    src/headers/stdtable.h
+    src/headers/stdtable.h \
+    src/headers/types.h
 
 SOURCES += \
     src/aboutdialog.cpp \

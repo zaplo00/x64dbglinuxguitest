@@ -1,5 +1,10 @@
 #include "src/headers/mainwindow.h"
+#include "headers/types.h"
 
 int main(int argc, char **argv) {
-    return 0;
+   qRegisterMetaType<dsint>("dsint");
+   qRegisterMetaType<duint>("duint");
+   qRegisterMetaType<byte_t>("byte_t");
+
+   return 0;
 }

@@ -7,6 +7,8 @@
 #include <QDateTime>
 #include <QLocale>
 
+#include "types.h"
+
 inline QString ToPtrString(duint Address)
 {
     //
@@ -99,7 +101,7 @@ QString ToLongDoubleString(void* buffer);
 
 QString ToDateString(const QDate & date);
 
-QString GetDataTypeString(void* buffer, duint size, ENCODETYPE type);
+QString GetDataTypeString(void* buffer, duint size, int type); //TODO: ENCODETYPE from bridgemain.h
 
 inline QDate GetCompileDate()
 {
@@ -111,22 +113,6 @@ inline QDate GetCompileDate()
 #else
 #define ArchValue(x32value, x64value) x32value
 #endif //_WIN64
-
-// Format : d:hh:mm:ss.1234567
-inline QString FILETIMEToTime(const FILETIME & time)
-{
-    // FILETIME is in 100ns
-    quint64 time100ns = (quint64)time.dwHighDateTime << 32 | (quint64)time.dwLowDateTime;
-    quint64 milliseconds = time100ns / 10000;
-    quint64 days = milliseconds / (1000 * 60 * 60 * 24);
-    QTime qtime = QTime::fromMSecsSinceStartOfDay(milliseconds % (1000 * 60 * 60 * 24));
-    if(days == 0) // 0 days
-        return QString().sprintf("%02d:%02d:%02d.%07lld", qtime.hour(), qtime.minute(), qtime.second(), time100ns % 10000000);
-    else
-        return QString().sprintf("%lld:%02d:%02d:%02d.%07lld", days, qtime.hour(), qtime.minute(), qtime.second(), time100ns % 10000000);
-}
-
-QString FILETIMEToDate(const FILETIME & date);
 
 bool GetCommentFormat(duint addr, QString & comment, bool* autoComment = nullptr);
 
