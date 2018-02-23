@@ -86,7 +86,15 @@ HEADERS += \
     src/headers/wordeditdialog.h \
     src/headers/xrefbrowsedialog.h \
     src/headers/yararuleselectiondialog.h \
-    src/headers/mainwindow.h
+    src/headers/mainwindow.h \
+    src/headers/abstracttableview.h \
+    src/headers/cachedfontmetrics.h \
+    src/headers/stringutil.h \
+    src/headers/configuration.h \
+    src/headers/miscutil.h \
+    src/headers/actionhelpers.h \
+    src/headers/menubuilder.h \
+    src/headers/stdtable.h
 
 SOURCES += \
     src/aboutdialog.cpp \
@@ -128,4 +136,10 @@ SOURCES += \
     src/wordeditdialog.cpp \
     src/xrefbrowsedialog.cpp \
     src/yararuleselectiondialog.cpp \
-    src/mainwindow.cpp
+    src/mainwindow.cpp \
+    src/abstracttableview.cpp \
+    src/stringutil.cpp \
+    src/configuration.cpp \
+    src/miscutil.cpp \
+    src/menubuilder.cpp \
+    src/stdtable.cpp
