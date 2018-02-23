@@ -1,18 +1,18 @@
 #ifndef FAVOURITETOOLS_H
 #define FAVOURITETOOLS_H
 
-#include <QWidget>
+#include <QDialog>
 
 namespace Ui {
 class FavouriteTools;
 }
 
-class FavouriteTools : public QWidget
+class FavouriteTools : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit FavouriteTools(QWidget *parent = 0);
+    explicit FavouriteTools(QDialog *parent = 0);
     ~FavouriteTools();
 
 private:

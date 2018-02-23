@@ -95,7 +95,11 @@ HEADERS += \
     src/headers/actionhelpers.h \
     src/headers/menubuilder.h \
     src/headers/stdtable.h \
-    src/headers/types.h
+    src/headers/types.h \
+    src/headers/entropy.h \
+    src/headers/qentropyview.h \
+    src/headers/shortcutedit.h \
+    src/headers/historylineedit.h
 
 SOURCES += \
     src/aboutdialog.cpp \
@@ -143,4 +147,7 @@ SOURCES += \
     src/configuration.cpp \
     src/miscutil.cpp \
     src/menubuilder.cpp \
-    src/stdtable.cpp
+    src/stdtable.cpp \
+    src/qentropyview.cpp \
+    src/shortcutedit.cpp \
+    src/historylineedit.cpp

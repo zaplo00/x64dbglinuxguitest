@@ -1,8 +1,8 @@
 #include "headers/favouritetools.h"
 #include "ui_FavouriteTools.h"
 
-FavouriteTools::FavouriteTools(QWidget *parent) :
-    QWidget(parent),
+FavouriteTools::FavouriteTools(QDialog *parent) :
+    QDialog(parent),
     ui(new Ui::FavouriteTools)
 {
     ui->setupUi(this);
