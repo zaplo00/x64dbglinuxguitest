@@ -97,7 +97,7 @@ QString ToDateString(const QDate & date)
     return QString().sprintf("%s %d %d", months[date.month() - 1], date.day(), date.year());
 }
 
-QString FILETIMEToDate(const FILETIME & date)
+/*QString FILETIMEToDate(const FILETIME & date)
 {
     FILETIME localdate;
     FileTimeToLocalFileTime(&date, &localdate);
@@ -112,11 +112,11 @@ QString FILETIMEToDate(const FILETIME & date)
         return QLocale(QString(currentLocale)).toString(qdate) + FILETIMEToTime(localdate);
     else // today
         return FILETIMEToTime(localdate);
-}
+}*/
 
 bool GetCommentFormat(duint addr, QString & comment, bool* autoComment)
 {
-    comment.clear();
+   /* comment.clear();
     char commentData[MAX_COMMENT_SIZE] = "";
     if(!DbgGetCommentAt(addr, commentData))
         return false;
@@ -133,5 +133,6 @@ bool GetCommentFormat(duint addr, QString & comment, bool* autoComment)
         comment = commentFormat;
     else
         comment = commentData + a;
-    return true;
+    return true;*/
+    return false;
 }

@@ -48,4 +48,51 @@ inline int sprintf_s(char (&buffer)[sizeOfBuffer], const char* format, ...)
     return result;
 }
 
+typedef enum
+{
+    enc_unknown,  //must be 0
+    enc_byte,     //1 byte
+    enc_word,     //2 bytes
+    enc_dword,    //4 bytes
+    enc_fword,    //6 bytes
+    enc_qword,    //8 bytes
+    enc_tbyte,    //10 bytes
+    enc_oword,    //16 bytes
+    enc_mmword,   //8 bytes
+    enc_xmmword,  //16 bytes
+    enc_ymmword,  //32 bytes
+    enc_zmmword,  //64 bytes avx512 not supported
+    enc_real4,    //4 byte float
+    enc_real8,    //8 byte double
+    enc_real10,   //10 byte decimal
+    enc_ascii,    //ascii sequence
+    enc_unicode,  //unicode sequence
+    enc_code,     //start of code
+    enc_junk,     //junk code
+    enc_middle    //middle of data
+} ENCODETYPE;
+
+//Debugger defines
+#define MAX_LABEL_SIZE 256
+#define MAX_COMMENT_SIZE 512
+#define MAX_MODULE_SIZE 256
+#define MAX_IMPORT_SIZE 65536
+#define MAX_BREAKPOINT_SIZE 256
+#define MAX_CONDITIONAL_EXPR_SIZE 256
+#define MAX_CONDITIONAL_TEXT_SIZE 256
+#define MAX_SCRIPT_LINE_SIZE 2048
+#define MAX_THREAD_NAME_SIZE 256
+#define MAX_WATCH_NAME_SIZE 256
+#define MAX_STRING_SIZE 512
+#define MAX_ERROR_SIZE 512
+#define RIGHTS_STRING_SIZE (sizeof("ERWCG") + 1)
+#define MAX_SECTION_SIZE 10
+#define MAX_COMMAND_LINE_SIZE 256
+#define MAX_MNEMONIC_SIZE 64
+#define PAGE_SIZE 0x1000
+
+//Bridge defines
+#define MAX_SETTING_SIZE 65536
+#define DBG_VERSION 25
+
 #endif // TYPES_H
