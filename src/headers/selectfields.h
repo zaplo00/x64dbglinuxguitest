@@ -1,18 +1,18 @@
 #ifndef SELECTFIELDS_H
 #define SELECTFIELDS_H
 
-#include <QWidget>
+#include <QDialog>
 
 namespace Ui {
 class SelectFields;
 }
 
-class SelectFields : public QWidget
+class SelectFields : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit SelectFields(QWidget *parent = 0);
+    explicit SelectFields(QDialog *parent = 0);
     ~SelectFields();
 
 private:

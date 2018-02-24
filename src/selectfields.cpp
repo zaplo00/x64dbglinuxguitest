@@ -1,8 +1,8 @@
 #include "headers/selectfields.h"
 #include "ui_SelectFields.h"
 
-SelectFields::SelectFields(QWidget *parent) :
-    QWidget(parent),
+SelectFields::SelectFields(QDialog *parent) :
+    QDialog(parent),
     ui(new Ui::SelectFields)
 {
     ui->setupUi(this);
