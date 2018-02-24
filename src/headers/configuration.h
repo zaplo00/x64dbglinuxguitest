@@ -7,6 +7,8 @@
 #include <QColor>
 #include <QFont>
 
+#include "types.h"
+
 #define Config() (Configuration::instance())
 #define ConfigColor(x) (Config()->getColor(x))
 #define ConfigBool(x,y) (Config()->getBool(x,y))
