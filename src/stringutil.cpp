@@ -2,8 +2,7 @@
 
 #include "headers/stringutil.h"
 #include "headers/miscutil.h"
-//#include "ldconvert.h"
-//TODO: add ldconvert library
+#include "ldconvert.cpp"
 
 QString ToLongDoubleString(void* buffer)
 {

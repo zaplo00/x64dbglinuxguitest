@@ -99,7 +99,8 @@ HEADERS += \
     src/headers/entropy.h \
     src/headers/qentropyview.h \
     src/headers/shortcutedit.h \
-    src/headers/historylineedit.h
+    src/headers/historylineedit.h \
+    src/headers/ldconvert.h
 
 SOURCES += \
     src/aboutdialog.cpp \
@@ -150,4 +151,5 @@ SOURCES += \
     src/stdtable.cpp \
     src/qentropyview.cpp \
     src/shortcutedit.cpp \
-    src/historylineedit.cpp
+    src/historylineedit.cpp \
+    src/ldconvert.cpp
