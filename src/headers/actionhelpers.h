@@ -56,8 +56,8 @@ private:
 public:
     virtual void updateShortcuts()
     {
-        for(const auto & actionShortcut : actionShortcutPairs)
-            actionShortcut.action->setShortcut(ConfigShortcut(actionShortcut.shortcut));
+        //for(const auto & actionShortcut : actionShortcutPairs)
+        //    actionShortcut.action->setShortcut(ConfigShortcut(actionShortcut.shortcut));
     }
 
 private:
@@ -78,7 +78,7 @@ private:
     inline QAction* connectShortcutAction(QAction* action, const char* shortcut)
     {
         actionShortcutPairs.push_back(ActionShortcut(action, shortcut));
-        action->setShortcut(ConfigShortcut(shortcut));
+        //action->setShortcut(ConfigShortcut(shortcut));
         action->setShortcutContext(Qt::WidgetShortcut);
         getBase()->addAction(action);
         return action;

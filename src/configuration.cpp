@@ -816,7 +816,7 @@ const QColor Configuration::getColor(const QString id) const
 
 bool Configuration::getBool(const QString category, const QString id) const
 {
-    if(Bools.contains(category))
+    /*if(Bools.contains(category))
     {
         if(Bools[category].contains(id))
             return Bools[category][id];
@@ -835,7 +835,7 @@ bool Configuration::getBool(const QString category, const QString id) const
     msg.setWindowIcon(DIcon("compile-warning.png"));
     msg.setWindowFlags(msg.windowFlags() & (~Qt::WindowContextHelpButtonHint));
     if(msg.exec() == QMessageBox::Cancel)
-        noMoreMsgbox = true;
+        noMoreMsgbox = true;*/
     return false;
 }
 
@@ -1133,7 +1133,7 @@ void Configuration::registerMenuBuilder(MenuBuilder* menu, size_t count)
 
 void Configuration::registerMainMenuStringList(QList<QAction*>* menu)
 {
-    NamedMenuBuilders.append(MenuMap(menu, menu->size() - 1));
+    //NamedMenuBuilders.append(MenuMap(menu, menu->size() - 1));
 }
 
 static bool IsPointVisible(QPoint pos)

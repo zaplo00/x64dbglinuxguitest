@@ -101,7 +101,10 @@ HEADERS += \
     src/headers/shortcutedit.h \
     src/headers/historylineedit.h \
     src/headers/ldconvert.h \
-    src/headers/main.h
+    src/headers/main.h \
+    src/headers/tabwidget.h \
+    src/headers/tabbar.h \
+    src/headers/multiitemselectwindow.h
 
 SOURCES += \
     src/aboutdialog.cpp \
@@ -153,7 +156,10 @@ SOURCES += \
     src/qentropyview.cpp \
     src/shortcutedit.cpp \
     src/historylineedit.cpp \
-    src/ldconvert.cpp
+    src/ldconvert.cpp \
+    src/tabwidget.cpp \
+    src/tabbar.cpp \
+    src/multiitemselectwindow.cpp
 
 DISTFILES += \
     images/egg.wav \

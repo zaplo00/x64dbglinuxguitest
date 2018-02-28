@@ -95,4 +95,17 @@ typedef enum
 #define MAX_SETTING_SIZE 65536
 #define DBG_VERSION 25
 
+//Gui defines
+#define GUI_PLUGIN_MENU 0
+#define GUI_DISASM_MENU 1
+#define GUI_DUMP_MENU 2
+#define GUI_STACK_MENU 3
+
+#define GUI_DISASSEMBLY 0
+#define GUI_DUMP 1
+#define GUI_STACK 2
+#define GUI_GRAPH 3
+#define GUI_MEMMAP 4
+#define GUI_SYMMOD 5
+
 #endif // TYPES_H
