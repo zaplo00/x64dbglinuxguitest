@@ -12,7 +12,7 @@ class DataCopyDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit DataCopyDialog(QDialog *parent = 0);
+    explicit DataCopyDialog(QWidget *parent = 0);
     ~DataCopyDialog();
 
 private:

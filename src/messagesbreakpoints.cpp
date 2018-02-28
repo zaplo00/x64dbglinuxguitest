@@ -1,7 +1,7 @@
 #include "headers/messagesbreakpoints.h"
 #include "ui_MessagesBreakpoints.h"
 
-MessagesBreakpoints::MessagesBreakpoints(QDialog *parent) :
+MessagesBreakpoints::MessagesBreakpoints(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::MessagesBreakpoints)
 {

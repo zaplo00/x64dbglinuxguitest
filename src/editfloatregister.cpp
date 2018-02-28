@@ -1,7 +1,7 @@
 #include "headers/editfloatregister.h"
 #include "ui_EditFloatRegister.h"
 
-EditFloatRegister::EditFloatRegister(QDialog *parent) :
+EditFloatRegister::EditFloatRegister(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::EditFloatRegister)
 {

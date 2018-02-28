@@ -1,7 +1,7 @@
 #include "headers/appearancedialog.h"
 #include "ui_AppearanceDialog.h"
 
-AppearanceDialog::AppearanceDialog(QDialog *parent) :
+AppearanceDialog::AppearanceDialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::AppearanceDialog)
 {

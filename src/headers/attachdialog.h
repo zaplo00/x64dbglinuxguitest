@@ -12,7 +12,7 @@ class AttachDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit AttachDialog(QDialog *parent = 0);
+    explicit AttachDialog(QWidget *parent = 0);
     ~AttachDialog();
 
 private:

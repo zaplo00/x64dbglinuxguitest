@@ -1,7 +1,7 @@
 #include "headers/attachdialog.h"
 #include "ui_AttachDialog.h"
 
-AttachDialog::AttachDialog(QDialog *parent) :
+AttachDialog::AttachDialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::AttachDialog)
 {

@@ -12,7 +12,7 @@ class SimpleTraceDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit SimpleTraceDialog(QDialog *parent = 0);
+    explicit SimpleTraceDialog(QWidget *parent = 0);
     ~SimpleTraceDialog();
 
 private:

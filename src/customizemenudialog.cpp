@@ -1,7 +1,7 @@
 #include "headers/customizemenudialog.h"
 #include "ui_CustomizeMenuDialog.h"
 
-CustomizeMenuDialog::CustomizeMenuDialog(QDialog *parent) :
+CustomizeMenuDialog::CustomizeMenuDialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::CustomizeMenuDialog)
 {

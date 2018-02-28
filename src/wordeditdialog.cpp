@@ -1,7 +1,7 @@
 #include "headers/wordeditdialog.h"
 #include "ui_WordEditDialog.h"
 
-WordEditDialog::WordEditDialog(QDialog *parent) :
+WordEditDialog::WordEditDialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::WordEditDialog)
 {

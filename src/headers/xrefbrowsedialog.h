@@ -12,7 +12,7 @@ class XrefBrowseDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit XrefBrowseDialog(QDialog *parent = 0);
+    explicit XrefBrowseDialog(QWidget *parent = 0);
     ~XrefBrowseDialog();
 
 private:

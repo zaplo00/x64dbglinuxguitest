@@ -12,7 +12,7 @@ class BrowseDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit BrowseDialog(QDialog *parent = 0);
+    explicit BrowseDialog(QWidget *parent = 0);
     ~BrowseDialog();
 
 private:

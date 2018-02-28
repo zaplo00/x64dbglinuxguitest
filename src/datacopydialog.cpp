@@ -1,7 +1,7 @@
 #include "headers/datacopydialog.h"
 #include "ui_DataCopyDialog.h"
 
-DataCopyDialog::DataCopyDialog(QDialog *parent) :
+DataCopyDialog::DataCopyDialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::DataCopyDialog)
 {

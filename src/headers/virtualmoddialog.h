@@ -12,7 +12,7 @@ class VirtualModDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit VirtualModDialog(QDialog *parent = 0);
+    explicit VirtualModDialog(QWidget *parent = 0);
     ~VirtualModDialog();
 
 private:

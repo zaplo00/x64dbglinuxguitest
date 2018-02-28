@@ -1,7 +1,7 @@
 #include "headers/calculatordialog.h"
 #include "ui_CalculatorDialog.h"
 
-CalculatorDialog::CalculatorDialog(QDialog *parent) :
+CalculatorDialog::CalculatorDialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::CalculatorDialog)
 {

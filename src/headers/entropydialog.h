@@ -12,7 +12,7 @@ class EntropyDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit EntropyDialog(QDialog *parent = 0);
+    explicit EntropyDialog(QWidget *parent = 0);
     ~EntropyDialog();
 
 private:

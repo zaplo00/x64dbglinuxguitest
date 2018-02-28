@@ -12,7 +12,7 @@ class EditBreakpointDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit EditBreakpointDialog(QDialog *parent = 0);
+    explicit EditBreakpointDialog(QWidget *parent = 0);
     ~EditBreakpointDialog();
 
 private:

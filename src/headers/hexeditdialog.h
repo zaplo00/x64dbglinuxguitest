@@ -12,7 +12,7 @@ class HexEditDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit HexEditDialog(QDialog *parent = 0);
+    explicit HexEditDialog(QWidget *parent = 0);
     ~HexEditDialog();
 
 private:

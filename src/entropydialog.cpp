@@ -1,7 +1,7 @@
 #include "headers/entropydialog.h"
 #include "ui_EntropyDialog.h"
 
-EntropyDialog::EntropyDialog(QDialog *parent) :
+EntropyDialog::EntropyDialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::EntropyDialog)
 {

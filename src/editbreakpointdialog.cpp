@@ -1,7 +1,7 @@
 #include "headers/editbreakpointdialog.h"
 #include "ui_EditBreakpointDialog.h"
 
-EditBreakpointDialog::EditBreakpointDialog(QDialog *parent) :
+EditBreakpointDialog::EditBreakpointDialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::EditBreakpointDialog)
 {

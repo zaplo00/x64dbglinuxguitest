@@ -1,7 +1,7 @@
 #include "headers/yararuleselectiondialog.h"
 #include "ui_YaraRuleSelectionDialog.h"
 
-YaraRuleSelectionDialog::YaraRuleSelectionDialog(QDialog *parent) :
+YaraRuleSelectionDialog::YaraRuleSelectionDialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::YaraRuleSelectionDialog)
 {

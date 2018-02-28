@@ -814,7 +814,7 @@ const QColor Configuration::getColor(const QString id) const
     return Qt::black;
 }
 
-const bool Configuration::getBool(const QString category, const QString id) const
+bool Configuration::getBool(const QString category, const QString id) const
 {
     if(Bools.contains(category))
     {
@@ -866,7 +866,7 @@ void Configuration::setBool(const QString category, const QString id, const bool
         noMoreMsgbox = true;
 }
 
-const duint Configuration::getUint(const QString category, const QString id) const
+duint Configuration::getUint(const QString category, const QString id) const
 {
     if(Uints.contains(category))
     {

@@ -1,7 +1,7 @@
 #include "headers/assembledialog.h"
 #include "ui_AssembleDialog.h"
 
-AssembleDialog::AssembleDialog(QDialog *parent) :
+AssembleDialog::AssembleDialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::AssembleDialog)
 {

@@ -1,7 +1,7 @@
 #include "headers/virtualmoddialog.h"
 #include "ui_VirtualModDialog.h"
 
-VirtualModDialog::VirtualModDialog(QDialog *parent) :
+VirtualModDialog::VirtualModDialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::VirtualModDialog)
 {

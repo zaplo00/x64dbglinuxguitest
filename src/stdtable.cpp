@@ -18,7 +18,7 @@ StdTable::StdTable(QWidget* parent) : AbstractTableView(parent)
     mCopyMenuDebugOnly = true;
     setContextMenuPolicy(Qt::CustomContextMenu);
 
-    connect(Bridge::getBridge(), SIGNAL(repaintTableView()), this, SLOT(reloadData()));
+    //connect(Bridge::getBridge(), SIGNAL(repaintTableView()), this, SLOT(reloadData()));
     connect(this, SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(contextMenuRequestedSlot(QPoint)));
     connect(this, SIGNAL(headerButtonPressed(int)), this, SLOT(headerButtonPressedSlot(int)));
 }
@@ -480,7 +480,7 @@ void StdTable::copyLineSlot()
             }
         }
     }
-    Bridge::CopyToClipboard(finalText);
+    //Bridge::CopyToClipboard(finalText);
 }
 
 void StdTable::copyLineToLogSlot()
@@ -504,7 +504,7 @@ void StdTable::copyLineToLogSlot()
             finalText += "\r\n";
         }
     }
-    emit Bridge::getBridge()->addMsgToLog(finalText.toUtf8());
+    //emit Bridge::getBridge()->addMsgToLog(finalText.toUtf8());
 }
 
 QString StdTable::copyTable(const std::vector<int> & colWidths)
@@ -564,7 +564,7 @@ void StdTable::copyTableSlot()
     int colCount = getColumnCount();
     for(int i = 0; i < colCount; i++)
         colWidths.push_back(getColumnWidth(i) / getCharWidth());
-    Bridge::CopyToClipboard(copyTable(colWidths));
+    //Bridge::CopyToClipboard(copyTable(colWidths));
 }
 
 void StdTable::copyTableToLogSlot()
@@ -573,7 +573,7 @@ void StdTable::copyTableToLogSlot()
     int colCount = getColumnCount();
     for(int i = 0; i < colCount; i++)
         colWidths.push_back(getColumnWidth(i) / getCharWidth());
-    emit Bridge::getBridge()->addMsgToLog(copyTable(colWidths).toUtf8());
+    //emit Bridge::getBridge()->addMsgToLog(copyTable(colWidths).toUtf8());
 }
 
 void StdTable::copyTableResizeSlot()
@@ -588,7 +588,7 @@ void StdTable::copyTableResizeSlot()
             max = std::max(getCellContent(j, i).length(), max);
         colWidths.push_back(max);
     }
-    Bridge::CopyToClipboard(copyTable(colWidths));
+    //Bridge::CopyToClipboard(copyTable(colWidths));
 }
 
 void StdTable::copyTableResizeToLogSlot()
@@ -603,7 +603,7 @@ void StdTable::copyTableResizeToLogSlot()
             max = std::max(getCellContent(j, i).length(), max);
         colWidths.push_back(max);
     }
-    emit Bridge::getBridge()->addMsgToLog(copyTable(colWidths).toUtf8());
+    //emit Bridge::getBridge()->addMsgToLog(copyTable(colWidths).toUtf8());
 }
 
 void StdTable::copyEntrySlot()
@@ -614,7 +614,7 @@ void StdTable::copyEntrySlot()
     int col = action->objectName().toInt();
     QString finalText = getCellContent(getInitialSelection(), col);
     while(finalText.endsWith(" ")) finalText.chop(1);
-    Bridge::CopyToClipboard(finalText);
+    //Bridge::CopyToClipboard(finalText);
 }
 
 void StdTable::setupCopyMenu(QMenu* copyMenu)
@@ -717,7 +717,7 @@ void StdTable::contextMenuRequestedSlot(const QPoint & pos)
         emit contextMenuSignal(pos);
         return;
     }
-    if(mCopyMenuDebugOnly && !DbgIsDebugging())
+    if(mCopyMenuDebugOnly /*&& !DbgIsDebugging()*/)
         return;
     QMenu wMenu(this);
     QMenu wCopyMenu(tr("&Copy"), this);

@@ -12,7 +12,7 @@ class WordEditDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit WordEditDialog(QDialog *parent = 0);
+    explicit WordEditDialog(QWidget *parent = 0);
     ~WordEditDialog();
 
 private:

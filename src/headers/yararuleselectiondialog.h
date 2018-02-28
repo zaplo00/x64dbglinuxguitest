@@ -12,7 +12,7 @@ class YaraRuleSelectionDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit YaraRuleSelectionDialog(QDialog *parent = 0);
+    explicit YaraRuleSelectionDialog(QWidget *parent = 0);
     ~YaraRuleSelectionDialog();
 
 private:

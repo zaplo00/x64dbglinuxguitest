@@ -12,7 +12,7 @@ class CalculatorDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit CalculatorDialog(QDialog *parent = 0);
+    explicit CalculatorDialog(QWidget *parent = 0);
     ~CalculatorDialog();
 
 private:

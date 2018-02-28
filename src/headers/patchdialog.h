@@ -12,7 +12,7 @@ class PatchDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit PatchDialog(QDialog *parent = 0);
+    explicit PatchDialog(QWidget *parent = 0);
     ~PatchDialog();
 
 private:

@@ -64,9 +64,9 @@ public:
     void registerMainMenuStringList(QList<QAction*>* menu);
 
     const QColor getColor(const QString id) const;
-    const bool getBool(const QString category, const QString id) const;
+    bool getBool(const QString category, const QString id) const;
     void setBool(const QString category, const QString id, const bool b);
-    const duint getUint(const QString category, const QString id) const;
+    duint getUint(const QString category, const QString id) const;
     void setUint(const QString category, const QString id, const duint i);
     const QFont getFont(const QString id) const;
     const Shortcut getShortcut(const QString key_id) const;

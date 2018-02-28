@@ -1,7 +1,7 @@
 #include "headers/xrefbrowsedialog.h"
 #include "ui_XrefBrowseDialog.h"
 
-XrefBrowseDialog::XrefBrowseDialog(QDialog *parent) :
+XrefBrowseDialog::XrefBrowseDialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::XrefBrowseDialog)
 {

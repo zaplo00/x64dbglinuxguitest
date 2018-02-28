@@ -1,7 +1,7 @@
 #include "headers/gotodialog.h"
 #include "ui_GotoDialog.h"
 
-GotoDialog::GotoDialog(QDialog *parent) :
+GotoDialog::GotoDialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::GotoDialog)
 {

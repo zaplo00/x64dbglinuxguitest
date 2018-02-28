@@ -12,7 +12,7 @@ class FavouriteTools : public QDialog
     Q_OBJECT
 
 public:
-    explicit FavouriteTools(QDialog *parent = 0);
+    explicit FavouriteTools(QWidget *parent = 0);
     ~FavouriteTools();
 
 private:

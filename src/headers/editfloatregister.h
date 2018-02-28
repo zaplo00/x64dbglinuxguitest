@@ -12,7 +12,7 @@ class EditFloatRegister : public QDialog
     Q_OBJECT
 
 public:
-    explicit EditFloatRegister(QDialog *parent = 0);
+    explicit EditFloatRegister(QWidget *parent = 0);
     ~EditFloatRegister();
 
 private:

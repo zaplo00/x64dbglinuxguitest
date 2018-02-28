@@ -12,7 +12,7 @@ class AssembleDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit AssembleDialog(QDialog *parent = 0);
+    explicit AssembleDialog(QWidget *parent = 0);
     ~AssembleDialog();
 
 private:

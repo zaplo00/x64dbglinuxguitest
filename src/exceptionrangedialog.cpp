@@ -1,7 +1,7 @@
 #include "headers/exceptionrangedialog.h"
 #include "ui_ExceptionRangeDialog.h"
 
-ExceptionRangeDialog::ExceptionRangeDialog(QDialog *parent) :
+ExceptionRangeDialog::ExceptionRangeDialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::ExceptionRangeDialog)
 {

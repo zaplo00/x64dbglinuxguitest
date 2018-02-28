@@ -12,7 +12,7 @@ class CodepageSelectionDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit CodepageSelectionDialog(QDialog *parent = 0);
+    explicit CodepageSelectionDialog(QWidget *parent = 0);
     ~CodepageSelectionDialog();
 
 private:

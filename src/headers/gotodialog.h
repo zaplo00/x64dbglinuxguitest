@@ -12,7 +12,7 @@ class GotoDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit GotoDialog(QDialog *parent = 0);
+    explicit GotoDialog(QWidget *parent = 0);
     ~GotoDialog();
 
 private:

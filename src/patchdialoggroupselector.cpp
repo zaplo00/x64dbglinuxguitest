@@ -1,7 +1,7 @@
 #include "headers/patchdialoggroupselector.h"
 #include "ui_PatchDialogGroupSelector.h"
 
-PatchDialogGroupSelector::PatchDialogGroupSelector(QDialog *parent) :
+PatchDialogGroupSelector::PatchDialogGroupSelector(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::PatchDialogGroupSelector)
 {

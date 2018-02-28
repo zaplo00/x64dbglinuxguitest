@@ -2,6 +2,7 @@
 #define MISCUTIL_H
 
 #include <QIcon>
+#include "types.h"
 
 class QWidget;
 class QByteArray;

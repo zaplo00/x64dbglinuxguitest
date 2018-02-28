@@ -12,7 +12,7 @@ class PageMemoryRights : public QDialog
     Q_OBJECT
 
 public:
-    explicit PageMemoryRights(QDialog *parent = 0);
+    explicit PageMemoryRights(QWidget *parent = 0);
     ~PageMemoryRights();
 
 private:

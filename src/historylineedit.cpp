@@ -8,18 +8,19 @@ HistoryLineEdit::HistoryLineEdit(QWidget* parent) : QLineEdit(parent)
 
 void HistoryLineEdit::loadSettings(QString sectionPrefix)
 {
-    char buffer[MAX_SETTING_SIZE];
+    /*char buffer[MAX_SETTING_SIZE];
     for(int i = 1; BridgeSettingGet(sectionPrefix.toUtf8().constData(),
                                     QString("Line%1").arg(i).toUtf8().constData(),
                                     buffer) && buffer[0] && i < mCmdHistoryMaxSize; i++)
     {
         QString entry = QString(buffer);
         mCmdHistory.append(entry);
-    }
+    }*/
 }
 
 void HistoryLineEdit::saveSettings(QString sectionPrefix)
 {
+    /*
     int i = 1;
     for(i = 1; i <= mCmdHistory.size(); i++)
     {
@@ -32,6 +33,7 @@ void HistoryLineEdit::saveSettings(QString sectionPrefix)
     BridgeSettingSet(sectionPrefix.toUtf8().constData(),
                      QString("Line%1").arg(i).toUtf8().constData(),
                      "");
+                     */
 }
 
 void HistoryLineEdit::addLineToHistory(QString parLine)

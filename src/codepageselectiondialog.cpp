@@ -1,7 +1,7 @@
 #include "headers/codepageselectiondialog.h"
 #include "ui_CodepageSelectionDialog.h"
 
-CodepageSelectionDialog::CodepageSelectionDialog(QDialog *parent) :
+CodepageSelectionDialog::CodepageSelectionDialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::CodepageSelectionDialog)
 {

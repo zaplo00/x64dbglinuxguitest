@@ -12,7 +12,7 @@ class MessagesBreakpoints : public QDialog
     Q_OBJECT
 
 public:
-    explicit MessagesBreakpoints(QDialog *parent = 0);
+    explicit MessagesBreakpoints(QWidget *parent = 0);
     ~MessagesBreakpoints();
 
 private:

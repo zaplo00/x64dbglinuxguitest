@@ -1,7 +1,7 @@
 #include "headers/simpletracedialog.h"
 #include "ui_SimpleTraceDialog.h"
 
-SimpleTraceDialog::SimpleTraceDialog(QDialog *parent) :
+SimpleTraceDialog::SimpleTraceDialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::SimpleTraceDialog)
 {

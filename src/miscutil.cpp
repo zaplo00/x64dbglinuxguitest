@@ -100,7 +100,7 @@ void SimpleInfoBox(QWidget* parent, const QString & title, const QString & text)
 
 QString getSymbolicName(duint addr)
 {
-    char labelText[MAX_LABEL_SIZE]   = "";
+    /*char labelText[MAX_LABEL_SIZE]   = "";
     char moduleText[MAX_MODULE_SIZE] = "";
     bool bHasLabel = DbgGetLabelAt(addr, SEG_DEFAULT, labelText);
     bool bHasModule = (DbgGetModuleAt(addr, moduleText) && !QString(labelText).startsWith("JMP.&"));
@@ -113,14 +113,16 @@ QString getSymbolicName(duint addr)
     else if(bHasLabel) // <label>
         return QString("<%1>").arg(labelText);
     else
-        return addrText;
+        return addrText;*/
+    QString addrText = ToPtrString(addr);
+    return addrText;
 }
 
 static bool allowSeasons()
 {
-    srand(GetTickCount());
+    srand(time(NULL));
     duint setting = 0;
-    return !BridgeSettingGetUint("Misc", "NoSeasons", &setting) || !setting;
+    return false;//!BridgeSettingGetUint("Misc", "NoSeasons", &setting) || !setting;
 }
 
 static bool isChristmas()

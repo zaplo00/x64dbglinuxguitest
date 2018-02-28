@@ -12,7 +12,7 @@ class PatchDialogGroupSelector : public QDialog
     Q_OBJECT
 
 public:
-    explicit PatchDialogGroupSelector(QDialog *parent = 0);
+    explicit PatchDialogGroupSelector(QWidget *parent = 0);
     ~PatchDialogGroupSelector();
 
 private:
